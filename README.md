@@ -1,11 +1,11 @@
-# Signals POC with Firebase and Material Design
+# @lit-labs/signals POC with Firebase 
 
-This project demonstrates the use of `@lit-labs/signals` for state management in a Lit-based application. It integrates Firebase for authentication and Firestore for real-time data updates, and uses Material Web components for a modern UI.
+This project demonstrates the use of `@lit-labs/signals` for state management in a Lit-based application. It integrates Firebase for authentication and Firestore for real-time data updates.
 
 ## Features
 - **Reactive State Management**: Uses `@lit-labs/signals` to manage shared state between components.
 - **Firebase Integration**: Connects to Firebase Authentication and Firestore.
-- **Material Design**: Implements Material Web components for a polished UI.
+- **Material Design**: Implements Material Web components for a polished UI (almost 🤠).
 
 ## Components
 
