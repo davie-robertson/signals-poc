@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signals POC</title>
+  </head>
+  <body>
+    <h1>Signals POC</h1>
+    <h2>Provider and Consumer</h2>
+    <p>
+      The <code>user-provider</code> component generates a signal that can be
+      used by any component, regardless of its position in the DOM hierarchy.
+      In this case, the <code>user-profile</code> component uses the signal to
+      display user data.
+    </p>
+    <p>
+      Example usage:
+      <pre>
+        <code>
+          &lt;user-provider&gt;
+            &lt;user-profile&gt;&lt;/user-profile&gt;
+          &lt;/user-provider&gt;
+        </code>
+      </pre>
+    </p>
+    <user-provider>
+      <user-profile></user-profile>
+    </user-provider>
+
+    <!-- The <user-profile> component will not work unless it is wrapped in a <user-provider> component -->
+    <h2>Standalone Consumer</h2>
+    <p>
+      The <code>user-profile</code> component can also function outside of a
+      <code>user-provider</code>.
+    </p>
+    <user-profile></user-profile>
+
+    <script type="module" src="src/components/user-provider.ts"></script>
+    <script type="module" src="src/components/user-profile.ts"></script>
+  </body>
+</html>
