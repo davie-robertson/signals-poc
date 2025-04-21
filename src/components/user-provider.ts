@@ -83,6 +83,6 @@ export class UserProvider extends SignalWatcher(LitElement) {
   }
 
     render() {
-    return html`<slot></slot>`;
+    return html`<slot></slot>`; // not really required when using signals
   }
 }
