@@ -14,10 +14,12 @@
       In this case, the <code>user-profile</code> component uses the signal to
       display user data.
     </p>
+    <p>Any changes to the firebase firestore data (<code>users/{userId}</code> document) will be reflected in the user profile card. You can try updating this via your firebase console</p>
     <p>
       Example usage:
       <pre>
         <code>
+
           &lt;user-provider&gt;
             &lt;user-profile&gt;&lt;/user-profile&gt;
           &lt;/user-provider&gt;
